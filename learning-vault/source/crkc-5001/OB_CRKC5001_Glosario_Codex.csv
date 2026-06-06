@@ -1,0 +1,71 @@
+unit,term,definition
+U1,Organisational Behaviour,"Campo que estudia la conducta humana en organizaciones a nivel individual, grupal y organizacional."
+U1,management,"Proceso de coordinar personas, recursos y decisiones para alcanzar objetivos."
+U1,work,"Actividad productiva que también tiene significado social, identitario y psicológico."
+U1,organisation,Sistema social y técnico orientado a objetivos comunes.
+U1,micro OB,"Nivel centrado en individuo: personalidad, valores, percepción, motivación y aprendizaje."
+U1,meso OB,"Nivel centrado en equipos: roles, normas, comunicación, conflicto y negociación."
+U1,macro OB,"Nivel centrado en estructura, cultura, HRM, cambio y entorno."
+U1,sustainability,"Capacidad de sostener resultados, bienestar, ética, aprendizaje y adaptación en el tiempo."
+U1,productivity,Relación entre recursos usados y resultados obtenidos.
+U1,people skills,"Habilidades humanas para motivar, comunicar, liderar y resolver conflictos."
+U2,personality,"Patrones relativamente estables de pensamiento, emoción y conducta."
+U2,values,Creencias sobre lo deseable que guían prioridades y decisiones.
+U2,attitudes,"Evaluaciones positivas o negativas hacia personas, tareas u organizaciones."
+U2,skills,"Capacidades para ejecutar tareas físicas, cognitivas, sociales o técnicas."
+U2,group,Conjunto de personas que interactúan y comparten alguna relación o propósito.
+U2,team,Grupo interdependiente con meta común y responsabilidad compartida.
+U2,norms,Reglas formales o informales que orientan conducta grupal.
+U2,roles,Expectativas de conducta asociadas a una posición dentro de un grupo.
+U2,cohesion,"Grado de unión, compromiso y atracción entre miembros de un grupo."
+U2,structure,"Diseño formal de autoridad, tareas, coordinación y comunicación."
+U2,culture,"Valores, supuestos y normas compartidas que orientan la conducta organizacional."
+U2,climate,Percepción compartida sobre el ambiente cotidiano de trabajo.
+U2,psychological safety,"Creencia compartida de que se puede hablar, preguntar o admitir errores sin castigo interpersonal."
+U3,culture,"Valores, supuestos y normas compartidas que orientan la conducta organizacional."
+U3,diversity,Diferencias visibles e invisibles entre personas y grupos.
+U3,inclusion,"Capacidad de una organización para valorar, escuchar y permitir participación plena."
+U3,equity,"Justicia en acceso, trato, recursos y oportunidades."
+U3,belonging,Sentimiento de pertenencia y aceptación dentro de un grupo.
+U3,motivation,"Procesos que dirigen, energizan y sostienen el esfuerzo."
+U3,intrinsic motivation,"Motivación basada en interés, autonomía, propósito o satisfacción interna."
+U3,extrinsic motivation,Motivación basada en recompensas externas o consecuencias visibles.
+U3,performance,"Resultado laboral influido por capacidad, motivación, oportunidad y contexto."
+U3,justice,"Percepción de equidad distributiva, procedimental e interpersonal."
+U3,engagement,"Vínculo energético, cognitivo y emocional con el trabajo."
+U3,rewards,Incentivos materiales o simbólicos asociados al desempeño.
+U4,perception,"Proceso de seleccionar, organizar e interpretar información."
+U4,attribution,Explicación causal asignada a una conducta o resultado.
+U4,bias,Distorsión sistemática del juicio.
+U4,halo effect,Tendencia a generalizar una impresión positiva o negativa a otras dimensiones.
+U4,confirmation bias,Tendencia a buscar o interpretar información que confirma creencias previas.
+U4,bounded rationality,"Decisión limitada por información, tiempo y capacidad cognitiva."
+U4,decision making,Proceso de elegir entre alternativas.
+U4,learning,Cambio relativamente estable en conocimiento o conducta por experiencia.
+U4,reinforcement,Consecuencia que aumenta probabilidad de repetir una conducta.
+U4,punishment,Consecuencia que busca reducir una conducta.
+U4,feedback,Información sobre resultados o conducta usada para aprender y mejorar.
+U4,double-loop learning,Aprendizaje que cuestiona supuestos y no solo corrige acciones.
+U5,group,Conjunto de personas que interactúan y comparten alguna relación o propósito.
+U5,norms,Reglas formales o informales que orientan conducta grupal.
+U5,roles,Expectativas de conducta asociadas a una posición dentro de un grupo.
+U5,cohesion,"Grado de unión, compromiso y atracción entre miembros de un grupo."
+U5,conflict,"Incompatibilidad real o percibida entre intereses, valores o metas."
+U5,negotiation,Proceso para alcanzar acuerdos entre partes interdependientes.
+U5,BATNA,Mejor alternativa a un acuerdo negociado.
+U5,distributive negotiation,Negociación de suma fija enfocada en repartir valor.
+U5,integrative negotiation,Negociación orientada a crear valor y satisfacer intereses.
+U5,communication,Proceso de intercambio e interpretación de mensajes.
+U5,feedback,Información sobre resultados o conducta usada para aprender y mejorar.
+U5,noise,Interferencia que distorsiona el mensaje.
+U6,leadership,Proceso de influencia para orientar personas hacia objetivos compartidos.
+U6,management,"Proceso de coordinar personas, recursos y decisiones para alcanzar objetivos."
+U6,HRM,Gestión estratégica del ciclo de vida del talento humano.
+U6,talent,Capacidades humanas relevantes para lograr objetivos organizacionales.
+U6,change,"Transformación de procesos, estructuras, cultura, tecnología o comportamiento."
+U6,resistance,"Respuesta racional, emocional, cultural o política frente al cambio."
+U6,stress,Respuesta ante demandas percibidas como superiores a recursos disponibles.
+U6,burnout,"Estado de agotamiento, cinismo y baja eficacia asociado a estrés crónico."
+U6,wellbeing,"Condición integral de salud, energía, seguridad y satisfacción laboral."
+U6,transformational leadership,"Liderazgo que inspira, desarrolla y transforma valores y comportamiento."
+U6,sustainability,"Capacidad de sostener resultados, bienestar, ética, aprendizaje y adaptación en el tiempo."

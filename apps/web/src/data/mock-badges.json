@@ -1,0 +1,5 @@
+[
+  {"id":"badge-first-step","name":"Primer paso","description":"Completa tu primera microlección.","earned":true},
+  {"id":"badge-systems-observer","name":"Observador de sistemas","description":"Distingue individuo, equipo y organización.","earned":false},
+  {"id":"badge-climate-analyst","name":"Analista de clima","description":"Completa un diagnóstico de clima organizacional.","earned":false}
+]

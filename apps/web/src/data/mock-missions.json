@@ -1,0 +1,4 @@
+[
+  {"id":"mission-daily","title":"Recuperación activa","description":"Completa dos repasos sin consultar apuntes.","xp":80,"progress":50,"status":"active"},
+  {"id":"mission-case","title":"Aplica el marco","description":"Analiza un caso desde individuo, equipo y organización.","xp":120,"progress":0,"status":"available"}
+]

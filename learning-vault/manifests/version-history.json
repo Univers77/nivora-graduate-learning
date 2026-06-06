@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-06-05",
+  "items": [
+    {"version":"0.1.0","date":"2026-06-05","scope":"fase-1","summary":"Scaffold inicial con mocks y manifests."},
+    {"version":"0.2.0","date":"2026-06-05","scope":"fase-2","summary":"Learning Memory Lab y ruta CRKC 5001 con registro local explicable."},
+    {"version":"0.3.0","date":"2026-06-05","scope":"module-1","summary":"Experiencia premium personalizada para Oscar Vargas, laboratorio de clima y lecturas Word/PDF."},
+    {"version":"0.4.0","date":"2026-06-05","scope":"course-complete","summary":"Integracion curricular completa: seis unidades, glosario, banco de practica, casos, teorias y lecturas."}
+  ]
+}

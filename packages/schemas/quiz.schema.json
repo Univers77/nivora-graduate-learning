@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Quiz","type":"object","required":["id","lesson_id","question","correct_answer","explanation"],"properties":{"id":{"type":"string"},"lesson_id":{"type":"string"},"question":{"type":"string"},"correct_answer":{"type":"string"},"explanation":{"type":"string"}}}

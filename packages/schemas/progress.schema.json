@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Progress","type":"object","required":["learner_id","xp","streak_days","overall_mastery"],"properties":{"learner_id":{"type":"string"},"xp":{"type":"number"},"streak_days":{"type":"number"},"overall_mastery":{"type":"number"}}}

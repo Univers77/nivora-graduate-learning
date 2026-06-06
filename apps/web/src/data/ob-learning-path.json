@@ -1,0 +1,18 @@
+{
+  "id": "crkc-5001",
+  "title": "Organisational Behaviour — CRKC 5001",
+  "duration_weeks": 12,
+  "assessment": [
+    {"name":"Quiz","weight":30,"units":["ob-u2","ob-u5"]},
+    {"name":"Individual Contributions","weight":20,"units":["ob-u3","ob-u4"]},
+    {"name":"Final Portfolio","weight":50,"units":["ob-u6"]}
+  ],
+  "units": [
+    {"id":"ob-u1","title":"Fundamentos y gestión","concepts":[{"id":"ob-foundations","title":"Comportamiento organizacional"},{"id":"management-role","title":"Rol del manager"},{"id":"work-design","title":"Diseño del trabajo"}]},
+    {"id":"ob-u2","title":"Individuo, equipo y cultura","concepts":[{"id":"personality-values","title":"Personalidad y valores"},{"id":"team-dynamics","title":"Dinámica de equipos"},{"id":"culture-climate","title":"Cultura y clima laboral"}]},
+    {"id":"ob-u3","title":"Diversidad, motivación y desempeño","concepts":[{"id":"diversity-inclusion","title":"Diversidad e inclusión"},{"id":"motivation","title":"Teorías de motivación"},{"id":"performance","title":"Desempeño y justicia"}]},
+    {"id":"ob-u4","title":"Percepción, decisión y aprendizaje","concepts":[{"id":"perception-bias","title":"Percepción y sesgos"},{"id":"decision-making","title":"Toma de decisiones"},{"id":"reinforcement","title":"Aprendizaje y refuerzo"}]},
+    {"id":"ob-u5","title":"Negociación y comunicación","concepts":[{"id":"group-conflict","title":"Conflicto grupal"},{"id":"negotiation","title":"Negociación y BATNA"},{"id":"communication","title":"Comunicación organizacional"}]},
+    {"id":"ob-u6","title":"Liderazgo, cambio y bienestar","concepts":[{"id":"leadership","title":"Liderazgo"},{"id":"change","title":"Cambio organizacional"},{"id":"stress-wellbeing","title":"Estrés y bienestar"}]}
+  ]
+}

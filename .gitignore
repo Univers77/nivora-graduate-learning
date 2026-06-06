@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.local
+*.log
+*.tsbuildinfo
+apps/web/vite.config.js
+apps/web/vite.config.d.ts
+.playwright-cli/
+obsidian-export/
+tmp/
+output/
+.DS_Store
+Thumbs.db

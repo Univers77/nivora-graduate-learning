@@ -1,0 +1,1515 @@
+{
+  "metadata": {
+    "title": "OB CRKC5001 Modulo Completo Codex",
+    "generated_at": "2026-06-05 23:05 UTC",
+    "language": "es",
+    "purpose": "Base de conocimiento estructurada para herramienta de estudio.",
+    "license_note": "No copiar capítulos completos de fuentes externas. Guardar resúmenes propios, enlaces y metadatos. Revisar licencias."
+  },
+  "module": {
+    "code": "CRKC 5001",
+    "title": "Organisational Behaviour",
+    "duration": "12 weeks",
+    "units_count": 6,
+    "assessment": {
+      "quiz": "30% U2+U5",
+      "individual_contributions": "20% U3+U4",
+      "final_portfolio": "50% U6 + U3/U4"
+    }
+  },
+  "sources": [
+    {
+      "id": "course_ppt",
+      "name": "Overview_Organisational_Behaviour_CRKC_5001",
+      "type": "uploaded_ppt",
+      "url": "Archivo cargado por el usuario",
+      "note": "Define estructura del módulo, objetivos, evaluación, recursos y ruta de estudio."
+    },
+    {
+      "id": "openstax_ob",
+      "name": "OpenStax - Organizational Behavior",
+      "type": "open textbook",
+      "url": "https://openstax.org/books/organizational-behavior/pages/1-introduction",
+      "note": "Texto base principal. Usar con atribución y respetar restricción de no ingesta para entrenamiento LLM sin permiso."
+    },
+    {
+      "id": "openstax_ob_preface",
+      "name": "OpenStax - Organizational Behavior Preface",
+      "type": "documentation",
+      "url": "https://openstax.org/books/organizational-behavior/pages/preface",
+      "note": "Explica licencia, diseño pedagógico, recursos y uso del libro."
+    },
+    {
+      "id": "openstax_ob_index",
+      "name": "OpenStax - Organizational Behavior Index",
+      "type": "index",
+      "url": "https://openstax.org/books/organizational-behavior/pages/index",
+      "note": "Índice conceptual para localizar temas y términos."
+    },
+    {
+      "id": "openstax_mgmt",
+      "name": "OpenStax - Principles of Management",
+      "type": "open textbook",
+      "url": "https://openstax.org/books/principles-management/pages/1-introduction",
+      "note": "Complementa management, roles gerenciales, estrategia, HRM, liderazgo y cambio."
+    },
+    {
+      "id": "saylor_ob",
+      "name": "Saylor - Organizational Behavior v1.1",
+      "type": "open textbook mirror/course",
+      "url": "https://saylordotorg.github.io/text_organizational-behavior-v1.1/",
+      "note": "Texto abierto complementario con capítulos por diversidad, motivación, equipos, comunicación, conflicto, decisión y cultura."
+    },
+    {
+      "id": "umn_ob",
+      "name": "University of Minnesota Libraries - Organizational Behavior metadata",
+      "type": "open textbook metadata",
+      "url": "https://open.lib.umn.edu/organizationalbehavior/",
+      "note": "Página de metadatos; el libro fue removido de la colección, pero enlaza a alternativas Saylor y LibreTexts."
+    },
+    {
+      "id": "ebsco_bsu",
+      "name": "EBSCO Business Source Ultimate",
+      "type": "research database",
+      "url": "https://about.ebsco.com/products/research-databases/business-source-ultimate",
+      "note": "Base para artículos revisados por pares, informes, casos, investigación empresarial y académica."
+    },
+    {
+      "id": "emerald_bms",
+      "name": "Emerald - Business, Management & Strategy",
+      "type": "research database",
+      "url": "https://www.emeraldgrouppublishing.com/explore-our-content/our-subject-areas/our-subjects-business-management-strategy",
+      "note": "Investigación académica en management, strategy, leadership, HRM, OB, change, CSR y performance."
+    },
+    {
+      "id": "oer_commons",
+      "name": "OER Commons - OpenStax Hub",
+      "type": "oer hub",
+      "url": "https://www.oercommons.org/hubs/OpenStax",
+      "note": "Repositorio de materiales comunitarios relacionados con OpenStax."
+    }
+  ],
+  "commercial_references": [
+    {
+      "title": "Organizational Behavior",
+      "authors": "Stephen P. Robbins & Timothy A. Judge",
+      "use": "Referencia estándar para teorías clásicas y actuales de OB, motivación, liderazgo, equipos, cultura y cambio.",
+      "url": "https://www.pearson.com/"
+    },
+    {
+      "title": "Organizational Behaviour",
+      "authors": "Buchanan & Huczynski",
+      "use": "Muy útil para enfoque europeo/británico, casos, teoría y práctica de OB.",
+      "url": "https://www.pearson.com/"
+    },
+    {
+      "title": "Management and Organisational Behaviour",
+      "authors": "Laurie J. Mullins",
+      "use": "Texto amplio para management, comportamiento, estructura, cultura, liderazgo y cambio.",
+      "url": "https://www.pearson.com/"
+    },
+    {
+      "title": "Organizational Culture and Leadership",
+      "authors": "Edgar H. Schein",
+      "use": "Referencia central para cultura organizacional, artefactos, valores y supuestos básicos.",
+      "url": "https://www.wiley.com/"
+    },
+    {
+      "title": "Leading Change",
+      "authors": "John P. Kotter",
+      "use": "Referencia práctica para cambio organizacional y liderazgo de transformación.",
+      "url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=137"
+    },
+    {
+      "title": "Getting to Yes",
+      "authors": "Roger Fisher, William Ury & Bruce Patton",
+      "use": "Referencia central para negociación basada en intereses y BATNA.",
+      "url": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/getting-to-yes/"
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "authors": "Daniel Kahneman",
+      "use": "Base para heurísticas, sesgos y toma de decisiones.",
+      "url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow/"
+    },
+    {
+      "title": "Drive",
+      "authors": "Daniel H. Pink",
+      "use": "Divulgación útil sobre autonomía, maestría y propósito; complementar con Deci y Ryan.",
+      "url": "https://www.danpink.com/books/drive/"
+    }
+  ],
+  "units": [
+    {
+      "id": "U1",
+      "title": "Definitions and Orientation; The Nature of Work & Management",
+      "weeks": "1-2",
+      "assessment": "Base conceptual para todo el módulo y para la introducción del portafolio final.",
+      "question": "¿Qué es el comportamiento organizacional y por qué importa para la gestión y la sostenibilidad?",
+      "purpose": "Construir el lenguaje base del curso y comprender la organización como sistema humano, social, técnico y estratégico.",
+      "outcomes": [
+        "Definir comportamiento organizacional y ubicarlo dentro de management.",
+        "Diferenciar niveles de análisis: individuo, equipo y organización.",
+        "Explicar la naturaleza del trabajo y el rol del gerente.",
+        "Conectar OB con desempeño, sostenibilidad, ética y bienestar.",
+        "Identificar problemas organizacionales desde una mirada conductual."
+      ],
+      "content": [
+        [
+          "Definición profunda",
+          "El comportamiento organizacional estudia cómo las personas piensan, sienten, deciden, aprenden, se comunican y actúan dentro de organizaciones. El campo integra psicología, sociología, antropología, economía, management y ciencia política para explicar conducta individual, dinámica grupal y procesos organizacionales. Su valor práctico es que permite diagnosticar problemas humanos y diseñar intervenciones gerenciales basadas en evidencia."
+        ],
+        [
+          "Naturaleza del trabajo",
+          "El trabajo no es solo una actividad económica; también es una fuente de identidad, aprendizaje, relaciones, estatus, autonomía, propósito y estrés. Una organización sostenible debe diseñar el trabajo de manera que combine eficiencia con satisfacción, desarrollo y sentido."
+        ],
+        [
+          "Management y people skills",
+          "La gestión requiere planificar, organizar, coordinar y controlar, pero también motivar, comunicar, decidir, liderar, resolver conflictos y desarrollar personas. Un manager técnicamente competente puede fallar si no entiende conducta humana."
+        ],
+        [
+          "Niveles de análisis",
+          "El nivel micro estudia individuo; el nivel meso estudia grupos y equipos; el nivel macro estudia estructura, cultura, HRM y cambio. La fortaleza del módulo está en conectar estos niveles en un diagnóstico integral."
+        ],
+        [
+          "Sostenibilidad organizacional",
+          "La sostenibilidad organizacional no se limita a finanzas. Incluye continuidad del talento, bienestar, aprendizaje, adaptabilidad, inclusión, ética, resiliencia y capacidad de cambio. OB permite explicar por qué una organización puede tener estrategia correcta pero fracasar por cultura, liderazgo o conducta."
+        ]
+      ],
+      "concepts": [
+        "Organisational Behaviour",
+        "management",
+        "work",
+        "organisation",
+        "micro OB",
+        "meso OB",
+        "macro OB",
+        "sustainability",
+        "productivity",
+        "people skills"
+      ],
+      "theories": [
+        [
+          "Taylor",
+          "Scientific Management",
+          "Sirve para entender la búsqueda de eficiencia y control del trabajo; útil como contraste frente a enfoques humanos."
+        ],
+        [
+          "Mayo",
+          "Human Relations Movement",
+          "Muestra la importancia de factores sociales, atención, pertenencia y relaciones en el desempeño."
+        ],
+        [
+          "Mintzberg",
+          "Managerial Roles",
+          "Explica roles interpersonales, informacionales y decisionales del gerente."
+        ],
+        [
+          "Drucker",
+          "Management by Objectives",
+          "Relaciona objetivos, responsabilidad y desempeño organizacional."
+        ],
+        [
+          "Hackman & Oldham",
+          "Job Characteristics Model",
+          "Diseño del trabajo mediante variedad, identidad, significado, autonomía y retroalimentación."
+        ]
+      ],
+      "activities": [
+        "Elige una organización real y detecta 5 problemas de comportamiento organizacional.",
+        "Mapa conceptual: persona -> equipo -> cultura -> liderazgo -> desempeño.",
+        "Debate: ¿la gestión falla más por problemas técnicos o por problemas humanos?"
+      ],
+      "case": "Una empresa puede invertir en tecnología, pero si los equipos no confían entre sí, los líderes comunican mal y las recompensas castigan la colaboración, el desempeño caerá. Este caso muestra que la gestión necesita comprender la conducta humana además de recursos técnicos.",
+      "codex": "Crear un módulo \"intro\" con explicación por niveles, tarjetas de concepto, autoevaluación y un formulario para que el usuario registre una organización de referencia que usará durante todo el curso."
+    },
+    {
+      "id": "U2",
+      "title": "The Individual and Team; The Organisation, Structure and Culture",
+      "weeks": "3-4",
+      "assessment": "Unidad evaluada en el quiz junto con Unidad 5.",
+      "question": "¿Cómo influyen características individuales, equipos, estructura y cultura en el desempeño?",
+      "purpose": "Conectar persona, equipo, estructura formal, cultura informal y clima laboral.",
+      "outcomes": [
+        "Analizar personalidad, valores, habilidades y actitudes.",
+        "Distinguir grupo y equipo.",
+        "Explicar roles, normas, cohesión y seguridad psicológica.",
+        "Describir estructura organizacional y sus efectos conductuales.",
+        "Diferenciar cultura organizacional y clima laboral."
+      ],
+      "content": [
+        [
+          "Individuo en la organización",
+          "Cada persona llega al trabajo con capacidades, personalidad, valores, expectativas, identidad, experiencias y motivaciones. Estas variables influyen en ajuste al puesto, aprendizaje, comunicación, conflicto y respuesta al liderazgo."
+        ],
+        [
+          "Equipo y grupo",
+          "Un grupo comparte interacción; un equipo añade interdependencia, meta común, responsabilidad mutua y coordinación. Equipos efectivos requieren claridad de propósito, roles, normas, confianza, feedback y mecanismos para resolver conflicto."
+        ],
+        [
+          "Estructura organizacional",
+          "La estructura determina jerarquía, autoridad, especialización, coordinación y flujo de información. Estructuras funcionales favorecen eficiencia; estructuras divisionales favorecen foco; estructuras matriciales aumentan colaboración pero también ambigüedad y conflicto de autoridad."
+        ],
+        [
+          "Cultura organizacional",
+          "La cultura es el sistema de valores, creencias, supuestos y prácticas compartidas. Explica cómo se hacen realmente las cosas, qué se premia, qué se tolera y qué conductas se consideran legítimas."
+        ],
+        [
+          "Clima laboral",
+          "El clima laboral es la percepción cotidiana del ambiente de trabajo: liderazgo, justicia, carga, comunicación, reconocimiento, autonomía, confianza y apoyo. La cultura es más profunda y estable; el clima es más visible y sensible a decisiones diarias."
+        ],
+        [
+          "Aplicación gerencial",
+          "El manager debe alinear persona-rol, diseñar equipos sanos, clarificar estructura, cuidar cultura y medir clima. Muchos problemas de desempeño son en realidad problemas de diseño, comunicación o cultura."
+        ]
+      ],
+      "concepts": [
+        "personality",
+        "values",
+        "attitudes",
+        "skills",
+        "group",
+        "team",
+        "norms",
+        "roles",
+        "cohesion",
+        "structure",
+        "culture",
+        "climate",
+        "psychological safety"
+      ],
+      "theories": [
+        [
+          "Costa & McCrae",
+          "Big Five Personality Traits",
+          "Analizar personalidad y ajuste al trabajo."
+        ],
+        [
+          "Tuckman",
+          "Stages of Team Development",
+          "Comprender evolución de equipos."
+        ],
+        [
+          "Schein",
+          "Levels of Organizational Culture",
+          "Artefactos, valores declarados y supuestos básicos."
+        ],
+        [
+          "Cameron & Quinn",
+          "Competing Values Framework",
+          "Clan, adhocracy, market y hierarchy."
+        ],
+        [
+          "Edmondson",
+          "Psychological Safety",
+          "Voz, aprendizaje y confianza para reportar errores."
+        ],
+        [
+          "Mintzberg",
+          "Organizational Structures",
+          "Configuraciones y diseño organizacional."
+        ]
+      ],
+      "activities": [
+        "Diagnóstico de equipo usando Tuckman.",
+        "Matriz cultura vs clima de una organización.",
+        "Diseño de encuesta de clima de 12 preguntas Likert.",
+        "Comparar estructura funcional, divisional y matricial con ventajas y riesgos."
+      ],
+      "case": "Dos equipos con la misma cantidad de recursos pueden rendir distinto porque uno tiene roles claros, confianza y feedback, mientras otro tiene ambigüedad, conflicto de estatus y miedo a hablar. La diferencia no está en talento individual sino en dinámica de equipo y cultura.",
+      "codex": "Crear tarjetas de diagnóstico: personalidad/valores/equipo/estructura/cultura/clima; añadir mini-test de clima y mapa visual de equipo."
+    },
+    {
+      "id": "U3",
+      "title": "Culture and Diversity; Motivation and Performance",
+      "weeks": "5-6",
+      "assessment": "Base para contribución individual del 20% y para el portafolio final.",
+      "question": "¿Cómo se conectan cultura, diversidad y motivación con desempeño?",
+      "purpose": "Comprender cómo la dimensión humana se convierte en resultados medibles.",
+      "outcomes": [
+        "Diferenciar diversidad, inclusión, equidad y pertenencia.",
+        "Explicar motivación intrínseca y extrínseca.",
+        "Comparar teorías de motivación.",
+        "Relacionar justicia, recompensa y desempeño.",
+        "Desarrollar una contribución individual con teoría, evidencia y reflexión."
+      ],
+      "content": [
+        [
+          "Cultura y desempeño",
+          "La cultura orienta prioridades y comportamientos. Una cultura de aprendizaje permite experimentar, corregir y mejorar; una cultura de miedo genera silencio, ocultamiento y baja innovación. La cultura no es decoración: afecta decisiones, cooperación y desempeño."
+        ],
+        [
+          "Diversidad e inclusión",
+          "La diversidad incluye diferencias visibles e invisibles: edad, género, origen, cultura, educación, experiencia, habilidades, perspectivas, personalidad y formas de pensar. La inclusión convierte la diversidad en valor porque permite participación real, voz, seguridad psicológica y justicia."
+        ],
+        [
+          "Motivación",
+          "La motivación explica dirección, intensidad y persistencia del esfuerzo. Un colaborador puede tener capacidad, pero si no percibe justicia, reconocimiento o sentido, su esfuerzo disminuirá. La motivación debe analizarse desde necesidades, expectativas, metas, equidad, autonomía y recompensas."
+        ],
+        [
+          "Performance",
+          "El desempeño depende de capacidad, motivación y oportunidad. También depende de herramientas, liderazgo, feedback, clima, estructura y carga laboral. Por eso un diagnóstico serio no culpa automáticamente al individuo; analiza sistema y contexto."
+        ],
+        [
+          "Aplicación gerencial",
+          "Una estrategia motivacional debe equilibrar salario justo, reconocimiento, metas claras, feedback, autonomía, desarrollo, propósito y coherencia cultural. Motivar no es manipular: es diseñar condiciones para que las personas puedan y quieran contribuir."
+        ]
+      ],
+      "concepts": [
+        "culture",
+        "diversity",
+        "inclusion",
+        "equity",
+        "belonging",
+        "motivation",
+        "intrinsic motivation",
+        "extrinsic motivation",
+        "performance",
+        "justice",
+        "engagement",
+        "rewards"
+      ],
+      "theories": [
+        [
+          "Maslow",
+          "Hierarchy of Needs",
+          "Base histórica para pensar necesidades humanas."
+        ],
+        [
+          "Herzberg",
+          "Two-Factor Theory",
+          "Distingue factores higiénicos y motivadores."
+        ],
+        [
+          "McClelland",
+          "Needs Theory",
+          "Logro, poder y afiliación como impulsores."
+        ],
+        [
+          "Vroom",
+          "Expectancy Theory",
+          "Motivación = expectativa, instrumentalidad y valencia."
+        ],
+        [
+          "Adams",
+          "Equity Theory",
+          "La justicia comparativa afecta esfuerzo y satisfacción."
+        ],
+        [
+          "Locke & Latham",
+          "Goal-Setting Theory",
+          "Metas específicas y retadoras elevan desempeño si hay compromiso y feedback."
+        ],
+        [
+          "Deci & Ryan",
+          "Self-Determination Theory",
+          "Autonomía, competencia y relación explican motivación interna."
+        ],
+        [
+          "Ely & Thomas",
+          "Diversity Perspectives",
+          "Diversidad genera valor cuando se integra al aprendizaje organizacional."
+        ]
+      ],
+      "activities": [
+        "Diseñar plan motivacional para equipo con baja productividad.",
+        "Analizar caso de diversidad sin inclusión.",
+        "Mapa de motivadores e higiénicos con Herzberg.",
+        "Redactar contribución individual: cultura, diversidad y desempeño."
+      ],
+      "case": "Una empresa multicultural no mejora automáticamente por contratar perfiles diversos. Si las voces minoritarias no son escuchadas, la diversidad queda en apariencia. Si existe inclusión, la diversidad mejora aprendizaje, innovación y decisiones.",
+      "codex": "Crear comparador de teorías de motivación y generador de contribuciones individuales con estructura: concepto -> teoría -> caso -> análisis -> reflexión."
+    },
+    {
+      "id": "U4",
+      "title": "Perception and Decision Making; Learning and Reinforcement",
+      "weeks": "7-8",
+      "assessment": "Base para contribución individual del 20% y reflexión personal del portafolio.",
+      "question": "¿Cómo perciben, deciden, aprenden y cambian conducta las personas?",
+      "purpose": "Entender procesos cognitivos y conductuales detrás de errores, aprendizaje y cambio.",
+      "outcomes": [
+        "Explicar percepción, atribución y sesgos.",
+        "Reconocer barreras de decisión efectiva.",
+        "Aplicar aprendizaje y refuerzo al cambio de conducta.",
+        "Evaluar sesgos personales y organizacionales.",
+        "Diseñar mecanismos de feedback y aprendizaje."
+      ],
+      "content": [
+        [
+          "Percepción",
+          "La percepción es selección, organización e interpretación de información. En organizaciones afecta cómo evaluamos desempeño, intención, liderazgo, compromiso, conflicto y riesgo. No vemos la realidad completa: interpretamos desde experiencias, emociones, intereses y contexto."
+        ],
+        [
+          "Atribución",
+          "La atribución explica cómo asignamos causas al comportamiento. El error fundamental de atribución aparece cuando sobreestimamos factores internos de otros y subestimamos contexto. En gestión puede llevar a culpar a empleados por fallas sistémicas."
+        ],
+        [
+          "Toma de decisiones",
+          "Las decisiones gerenciales se toman con información incompleta, tiempo limitado, presión política y sesgos. La racionalidad limitada muestra que las personas satisfacen opciones aceptables en vez de maximizar siempre."
+        ],
+        [
+          "Sesgos",
+          "Sesgos como confirmación, halo, disponibilidad, anclaje, exceso de confianza y escalada de compromiso deterioran decisiones. Reducirlos requiere criterios claros, datos, debate estructurado, revisión externa y diversidad cognitiva."
+        ],
+        [
+          "Aprendizaje y refuerzo",
+          "La conducta cambia por experiencia, observación, feedback y consecuencias. El refuerzo aumenta conductas deseadas; el castigo puede reducir conductas, pero mal aplicado genera miedo y ocultamiento. El aprendizaje organizacional requiere convertir errores en conocimiento."
+        ],
+        [
+          "Aplicación gerencial",
+          "Crear sistemas de aprendizaje: post-mortems, retroalimentación, indicadores, revisión por pares, protección psicológica y doble bucle de aprendizaje."
+        ]
+      ],
+      "concepts": [
+        "perception",
+        "attribution",
+        "bias",
+        "halo effect",
+        "confirmation bias",
+        "bounded rationality",
+        "decision making",
+        "learning",
+        "reinforcement",
+        "punishment",
+        "feedback",
+        "double-loop learning"
+      ],
+      "theories": [
+        [
+          "Heider/Kelley",
+          "Attribution Theory",
+          "Explica cómo atribuimos causas a conductas."
+        ],
+        [
+          "Herbert Simon",
+          "Bounded Rationality",
+          "Decisiones bajo límites cognitivos e informacionales."
+        ],
+        [
+          "Kahneman & Tversky",
+          "Heuristics and Biases",
+          "Atajos mentales y errores sistemáticos."
+        ],
+        [
+          "Skinner",
+          "Operant Conditioning",
+          "Refuerzo, castigo y modificación conductual."
+        ],
+        [
+          "Bandura",
+          "Social Learning Theory",
+          "Aprendizaje por observación y autoeficacia."
+        ],
+        [
+          "Argyris & Schön",
+          "Organizational Learning",
+          "Single-loop y double-loop learning."
+        ]
+      ],
+      "activities": [
+        "Auditoría de sesgos en una mala decisión organizacional.",
+        "Diseñar sistema de feedback y refuerzo.",
+        "Debate: castigo vs aprendizaje ante errores.",
+        "Redactar contribución individual: percepción, decisión y aprendizaje."
+      ],
+      "case": "Un gerente interpreta la baja productividad como pereza individual, pero los datos muestran roles ambiguos, mala herramienta y sobrecarga. El error fue atribuir internamente un problema sistémico. La solución exige rediseño del trabajo, feedback y aprendizaje organizacional.",
+      "codex": "Crear simulador de sesgos: presentar caso, pedir diagnóstico, revelar sesgos probables y sugerir contramedidas."
+    },
+    {
+      "id": "U5",
+      "title": "Negotiation and Group Behaviour; Communication",
+      "weeks": "9-10",
+      "assessment": "Unidad evaluada en el quiz junto con Unidad 2.",
+      "question": "¿Cómo se comunican, negocian y resuelven conflictos los grupos?",
+      "purpose": "Dominar interacción social organizacional: grupos, conflicto, negociación y comunicación.",
+      "outcomes": [
+        "Explicar roles, normas y cohesión en grupos.",
+        "Distinguir conflicto funcional y disfuncional.",
+        "Comparar negociación distributiva e integrativa.",
+        "Aplicar BATNA y negociación basada en intereses.",
+        "Diagnosticar barreras de comunicación."
+      ],
+      "content": [
+        [
+          "Comportamiento grupal",
+          "Los grupos crean normas, roles, estatus, identidad y presión social. Pueden aumentar eficiencia y pertenencia, pero también generar conformidad, groupthink, favoritismo y resistencia."
+        ],
+        [
+          "Conflicto",
+          "El conflicto surge por recursos limitados, objetivos incompatibles, ambigüedad, comunicación deficiente, diferencias de valores o interdependencia. Puede ser funcional si mejora debate y decisiones, o disfuncional si destruye confianza."
+        ],
+        [
+          "Negociación",
+          "Negociar es gestionar intereses interdependientes. La negociación distributiva reparte valor; la integrativa crea valor. BATNA define la mejor alternativa si no hay acuerdo y marca el límite racional de negociación."
+        ],
+        [
+          "Comunicación",
+          "La comunicación incluye emisor, mensaje, canal, receptor, interpretación, feedback y ruido. En organizaciones también influyen poder, confianza, cultura, tecnología y emociones. Sin comunicación efectiva no hay coordinación ni ejecución."
+        ],
+        [
+          "Aplicación gerencial",
+          "Diseñar canales claros, reglas de reunión, feedback, acuerdos de negociación, mecanismos de escalamiento y cultura de conversación difícil."
+        ]
+      ],
+      "concepts": [
+        "group",
+        "norms",
+        "roles",
+        "cohesion",
+        "conflict",
+        "negotiation",
+        "BATNA",
+        "distributive negotiation",
+        "integrative negotiation",
+        "communication",
+        "feedback",
+        "noise"
+      ],
+      "theories": [
+        [
+          "Tuckman",
+          "Team Development",
+          "Forming, storming, norming, performing."
+        ],
+        [
+          "Fisher & Ury",
+          "Principled Negotiation",
+          "Separar personas del problema, enfocarse en intereses y usar criterios objetivos."
+        ],
+        [
+          "Thomas-Kilmann",
+          "Conflict Modes",
+          "Competir, colaborar, comprometer, evitar y ceder."
+        ],
+        [
+          "Shannon & Weaver",
+          "Communication Model",
+          "Modelo emisor-mensaje-canal-ruido-receptor."
+        ],
+        [
+          "Janis",
+          "Groupthink",
+          "Riesgo de pensamiento grupal y mala decisión por conformidad."
+        ]
+      ],
+      "activities": [
+        "Simulación de negociación con BATNA.",
+        "Diagnóstico de barreras de comunicación.",
+        "Role play de conflicto entre áreas.",
+        "Mapa de stakeholders y flujo de comunicación."
+      ],
+      "case": "Dos departamentos compiten por presupuesto. Si negocian distributivamente, uno gana y otro pierde. Si negocian integrativamente, pueden redefinir intereses, compartir recursos, secuenciar fases o construir una propuesta conjunta de mayor valor.",
+      "codex": "Crear modo role-play de negociación: usuario elige parte, BATNA, intereses y estilo; la herramienta simula contraparte y evalúa acuerdo."
+    },
+    {
+      "id": "U6",
+      "title": "Leadership & HRM; Change & Stress",
+      "weeks": "11-12",
+      "assessment": "Unidad central del portafolio final del 50%, integrando contribuciones de U3 y U4.",
+      "question": "¿Cómo liderar, gestionar talento, impulsar cambio y proteger bienestar?",
+      "purpose": "Integrar todo el módulo en liderazgo, recursos humanos, cambio, estrés y sostenibilidad.",
+      "outcomes": [
+        "Diferenciar gestión y liderazgo.",
+        "Comparar teorías de liderazgo.",
+        "Explicar HRM estratégico.",
+        "Analizar cambio y resistencia.",
+        "Relacionar estrés, burnout, bienestar y sostenibilidad."
+      ],
+      "content": [
+        [
+          "Liderazgo",
+          "Liderar es influir, movilizar sentido, orientar esfuerzos y construir confianza. La gestión coordina recursos; el liderazgo genera dirección, compromiso y adaptación. En la práctica ambos son necesarios."
+        ],
+        [
+          "HRM",
+          "La gestión de recursos humanos convierte la estrategia en prácticas sobre personas: atracción, selección, onboarding, formación, evaluación, compensación, desarrollo, retención y sucesión. HRM no es solo administración; es arquitectura de capacidades."
+        ],
+        [
+          "Cambio organizacional",
+          "El cambio puede ser incremental o transformacional. Requiere diagnóstico, visión, comunicación, participación, capacidades, quick wins y consolidación. La resistencia puede ser racional, emocional, política o cultural."
+        ],
+        [
+          "Estrés y burnout",
+          "El estrés aparece cuando las demandas superan recursos percibidos. El burnout implica agotamiento, cinismo y baja eficacia. Una organización sostenible monitorea carga, autonomía, apoyo, justicia, descanso, claridad y sentido."
+        ],
+        [
+          "Integración final",
+          "La Unidad 6 integra todo: liderazgo influye cultura; cultura moldea motivación; motivación afecta desempeño; percepción afecta decisiones; comunicación condiciona cambio; HRM institucionaliza prácticas; estrés muestra el costo humano del sistema."
+        ]
+      ],
+      "concepts": [
+        "leadership",
+        "management",
+        "HRM",
+        "talent",
+        "change",
+        "resistance",
+        "stress",
+        "burnout",
+        "wellbeing",
+        "transformational leadership",
+        "sustainability"
+      ],
+      "theories": [
+        [
+          "Bass & Avolio",
+          "Transformational Leadership",
+          "Influencia idealizada, inspiración, estimulación intelectual y consideración individual."
+        ],
+        [
+          "Hersey & Blanchard",
+          "Situational Leadership",
+          "Adaptar estilo a madurez/capacidad del colaborador."
+        ],
+        [
+          "Lewin",
+          "Unfreeze-Change-Refreeze",
+          "Modelo clásico de cambio."
+        ],
+        [
+          "Kotter",
+          "8-Step Change Model",
+          "Modelo práctico de transformación."
+        ],
+        [
+          "Maslach",
+          "Burnout",
+          "Agotamiento, cinismo y baja eficacia."
+        ],
+        [
+          "Bakker & Demerouti",
+          "Job Demands-Resources Model",
+          "Demandas y recursos predicen estrés y engagement."
+        ]
+      ],
+      "activities": [
+        "Diseñar intervención de cambio organizacional.",
+        "Diagnóstico de estrés y burnout.",
+        "Mapa del ciclo de vida del empleado.",
+        "Portafolio final integrador."
+      ],
+      "case": "Una transformación digital fracasa si se implementa solo como tecnología. Requiere liderazgo, comunicación, capacitación, rediseño de roles, apoyo emocional, medición de carga y cultura de aprendizaje. Sin estos elementos, el cambio genera resistencia y estrés.",
+      "codex": "Crear Portfolio Builder: seleccionar organización, insertar contribuciones U3 y U4, guiar análisis U6 y generar rúbrica de revisión."
+    }
+  ],
+  "glossary": [
+    {
+      "unit": "U1",
+      "term": "Organisational Behaviour",
+      "definition": "Campo que estudia la conducta humana en organizaciones a nivel individual, grupal y organizacional."
+    },
+    {
+      "unit": "U1",
+      "term": "management",
+      "definition": "Proceso de coordinar personas, recursos y decisiones para alcanzar objetivos."
+    },
+    {
+      "unit": "U1",
+      "term": "work",
+      "definition": "Actividad productiva que también tiene significado social, identitario y psicológico."
+    },
+    {
+      "unit": "U1",
+      "term": "organisation",
+      "definition": "Sistema social y técnico orientado a objetivos comunes."
+    },
+    {
+      "unit": "U1",
+      "term": "micro OB",
+      "definition": "Nivel centrado en individuo: personalidad, valores, percepción, motivación y aprendizaje."
+    },
+    {
+      "unit": "U1",
+      "term": "meso OB",
+      "definition": "Nivel centrado en equipos: roles, normas, comunicación, conflicto y negociación."
+    },
+    {
+      "unit": "U1",
+      "term": "macro OB",
+      "definition": "Nivel centrado en estructura, cultura, HRM, cambio y entorno."
+    },
+    {
+      "unit": "U1",
+      "term": "sustainability",
+      "definition": "Capacidad de sostener resultados, bienestar, ética, aprendizaje y adaptación en el tiempo."
+    },
+    {
+      "unit": "U1",
+      "term": "productivity",
+      "definition": "Relación entre recursos usados y resultados obtenidos."
+    },
+    {
+      "unit": "U1",
+      "term": "people skills",
+      "definition": "Habilidades humanas para motivar, comunicar, liderar y resolver conflictos."
+    },
+    {
+      "unit": "U2",
+      "term": "personality",
+      "definition": "Patrones relativamente estables de pensamiento, emoción y conducta."
+    },
+    {
+      "unit": "U2",
+      "term": "values",
+      "definition": "Creencias sobre lo deseable que guían prioridades y decisiones."
+    },
+    {
+      "unit": "U2",
+      "term": "attitudes",
+      "definition": "Evaluaciones positivas o negativas hacia personas, tareas u organizaciones."
+    },
+    {
+      "unit": "U2",
+      "term": "skills",
+      "definition": "Capacidades para ejecutar tareas físicas, cognitivas, sociales o técnicas."
+    },
+    {
+      "unit": "U2",
+      "term": "group",
+      "definition": "Conjunto de personas que interactúan y comparten alguna relación o propósito."
+    },
+    {
+      "unit": "U2",
+      "term": "team",
+      "definition": "Grupo interdependiente con meta común y responsabilidad compartida."
+    },
+    {
+      "unit": "U2",
+      "term": "norms",
+      "definition": "Reglas formales o informales que orientan conducta grupal."
+    },
+    {
+      "unit": "U2",
+      "term": "roles",
+      "definition": "Expectativas de conducta asociadas a una posición dentro de un grupo."
+    },
+    {
+      "unit": "U2",
+      "term": "cohesion",
+      "definition": "Grado de unión, compromiso y atracción entre miembros de un grupo."
+    },
+    {
+      "unit": "U2",
+      "term": "structure",
+      "definition": "Diseño formal de autoridad, tareas, coordinación y comunicación."
+    },
+    {
+      "unit": "U2",
+      "term": "culture",
+      "definition": "Valores, supuestos y normas compartidas que orientan la conducta organizacional."
+    },
+    {
+      "unit": "U2",
+      "term": "climate",
+      "definition": "Percepción compartida sobre el ambiente cotidiano de trabajo."
+    },
+    {
+      "unit": "U2",
+      "term": "psychological safety",
+      "definition": "Creencia compartida de que se puede hablar, preguntar o admitir errores sin castigo interpersonal."
+    },
+    {
+      "unit": "U3",
+      "term": "culture",
+      "definition": "Valores, supuestos y normas compartidas que orientan la conducta organizacional."
+    },
+    {
+      "unit": "U3",
+      "term": "diversity",
+      "definition": "Diferencias visibles e invisibles entre personas y grupos."
+    },
+    {
+      "unit": "U3",
+      "term": "inclusion",
+      "definition": "Capacidad de una organización para valorar, escuchar y permitir participación plena."
+    },
+    {
+      "unit": "U3",
+      "term": "equity",
+      "definition": "Justicia en acceso, trato, recursos y oportunidades."
+    },
+    {
+      "unit": "U3",
+      "term": "belonging",
+      "definition": "Sentimiento de pertenencia y aceptación dentro de un grupo."
+    },
+    {
+      "unit": "U3",
+      "term": "motivation",
+      "definition": "Procesos que dirigen, energizan y sostienen el esfuerzo."
+    },
+    {
+      "unit": "U3",
+      "term": "intrinsic motivation",
+      "definition": "Motivación basada en interés, autonomía, propósito o satisfacción interna."
+    },
+    {
+      "unit": "U3",
+      "term": "extrinsic motivation",
+      "definition": "Motivación basada en recompensas externas o consecuencias visibles."
+    },
+    {
+      "unit": "U3",
+      "term": "performance",
+      "definition": "Resultado laboral influido por capacidad, motivación, oportunidad y contexto."
+    },
+    {
+      "unit": "U3",
+      "term": "justice",
+      "definition": "Percepción de equidad distributiva, procedimental e interpersonal."
+    },
+    {
+      "unit": "U3",
+      "term": "engagement",
+      "definition": "Vínculo energético, cognitivo y emocional con el trabajo."
+    },
+    {
+      "unit": "U3",
+      "term": "rewards",
+      "definition": "Incentivos materiales o simbólicos asociados al desempeño."
+    },
+    {
+      "unit": "U4",
+      "term": "perception",
+      "definition": "Proceso de seleccionar, organizar e interpretar información."
+    },
+    {
+      "unit": "U4",
+      "term": "attribution",
+      "definition": "Explicación causal asignada a una conducta o resultado."
+    },
+    {
+      "unit": "U4",
+      "term": "bias",
+      "definition": "Distorsión sistemática del juicio."
+    },
+    {
+      "unit": "U4",
+      "term": "halo effect",
+      "definition": "Tendencia a generalizar una impresión positiva o negativa a otras dimensiones."
+    },
+    {
+      "unit": "U4",
+      "term": "confirmation bias",
+      "definition": "Tendencia a buscar o interpretar información que confirma creencias previas."
+    },
+    {
+      "unit": "U4",
+      "term": "bounded rationality",
+      "definition": "Decisión limitada por información, tiempo y capacidad cognitiva."
+    },
+    {
+      "unit": "U4",
+      "term": "decision making",
+      "definition": "Proceso de elegir entre alternativas."
+    },
+    {
+      "unit": "U4",
+      "term": "learning",
+      "definition": "Cambio relativamente estable en conocimiento o conducta por experiencia."
+    },
+    {
+      "unit": "U4",
+      "term": "reinforcement",
+      "definition": "Consecuencia que aumenta probabilidad de repetir una conducta."
+    },
+    {
+      "unit": "U4",
+      "term": "punishment",
+      "definition": "Consecuencia que busca reducir una conducta."
+    },
+    {
+      "unit": "U4",
+      "term": "feedback",
+      "definition": "Información sobre resultados o conducta usada para aprender y mejorar."
+    },
+    {
+      "unit": "U4",
+      "term": "double-loop learning",
+      "definition": "Aprendizaje que cuestiona supuestos y no solo corrige acciones."
+    },
+    {
+      "unit": "U5",
+      "term": "group",
+      "definition": "Conjunto de personas que interactúan y comparten alguna relación o propósito."
+    },
+    {
+      "unit": "U5",
+      "term": "norms",
+      "definition": "Reglas formales o informales que orientan conducta grupal."
+    },
+    {
+      "unit": "U5",
+      "term": "roles",
+      "definition": "Expectativas de conducta asociadas a una posición dentro de un grupo."
+    },
+    {
+      "unit": "U5",
+      "term": "cohesion",
+      "definition": "Grado de unión, compromiso y atracción entre miembros de un grupo."
+    },
+    {
+      "unit": "U5",
+      "term": "conflict",
+      "definition": "Incompatibilidad real o percibida entre intereses, valores o metas."
+    },
+    {
+      "unit": "U5",
+      "term": "negotiation",
+      "definition": "Proceso para alcanzar acuerdos entre partes interdependientes."
+    },
+    {
+      "unit": "U5",
+      "term": "BATNA",
+      "definition": "Mejor alternativa a un acuerdo negociado."
+    },
+    {
+      "unit": "U5",
+      "term": "distributive negotiation",
+      "definition": "Negociación de suma fija enfocada en repartir valor."
+    },
+    {
+      "unit": "U5",
+      "term": "integrative negotiation",
+      "definition": "Negociación orientada a crear valor y satisfacer intereses."
+    },
+    {
+      "unit": "U5",
+      "term": "communication",
+      "definition": "Proceso de intercambio e interpretación de mensajes."
+    },
+    {
+      "unit": "U5",
+      "term": "feedback",
+      "definition": "Información sobre resultados o conducta usada para aprender y mejorar."
+    },
+    {
+      "unit": "U5",
+      "term": "noise",
+      "definition": "Interferencia que distorsiona el mensaje."
+    },
+    {
+      "unit": "U6",
+      "term": "leadership",
+      "definition": "Proceso de influencia para orientar personas hacia objetivos compartidos."
+    },
+    {
+      "unit": "U6",
+      "term": "management",
+      "definition": "Proceso de coordinar personas, recursos y decisiones para alcanzar objetivos."
+    },
+    {
+      "unit": "U6",
+      "term": "HRM",
+      "definition": "Gestión estratégica del ciclo de vida del talento humano."
+    },
+    {
+      "unit": "U6",
+      "term": "talent",
+      "definition": "Capacidades humanas relevantes para lograr objetivos organizacionales."
+    },
+    {
+      "unit": "U6",
+      "term": "change",
+      "definition": "Transformación de procesos, estructuras, cultura, tecnología o comportamiento."
+    },
+    {
+      "unit": "U6",
+      "term": "resistance",
+      "definition": "Respuesta racional, emocional, cultural o política frente al cambio."
+    },
+    {
+      "unit": "U6",
+      "term": "stress",
+      "definition": "Respuesta ante demandas percibidas como superiores a recursos disponibles."
+    },
+    {
+      "unit": "U6",
+      "term": "burnout",
+      "definition": "Estado de agotamiento, cinismo y baja eficacia asociado a estrés crónico."
+    },
+    {
+      "unit": "U6",
+      "term": "wellbeing",
+      "definition": "Condición integral de salud, energía, seguridad y satisfacción laboral."
+    },
+    {
+      "unit": "U6",
+      "term": "transformational leadership",
+      "definition": "Liderazgo que inspira, desarrolla y transforma valores y comportamiento."
+    },
+    {
+      "unit": "U6",
+      "term": "sustainability",
+      "definition": "Capacidad de sostener resultados, bienestar, ética, aprendizaje y adaptación en el tiempo."
+    }
+  ],
+  "questions": [
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Define el tema central de Definitions and Orientation; The Nature of Work & Management y explica su valor para la gestión.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Compara dos conceptos clave de Definitions and Orientation; The Nature of Work & Management y aplícalos a una organización real.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Explica una teoría relacionada con Definitions and Orientation; The Nature of Work & Management e identifica sus limitaciones.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Diseña una intervención gerencial basada en Definitions and Orientation; The Nature of Work & Management.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Relaciona Definitions and Orientation; The Nature of Work & Management con sostenibilidad organizacional.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Construye un ejemplo de conflicto o problema organizacional que pueda analizarse desde Definitions and Orientation; The Nature of Work & Management.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué evidencia o datos usarías para diagnosticar un problema de Definitions and Orientation; The Nature of Work & Management?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U1",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué aprendizaje personal puedes extraer de Definitions and Orientation; The Nature of Work & Management para mejorar tu desempeño profesional?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Define el tema central de The Individual and Team; The Organisation, Structure and Culture y explica su valor para la gestión.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Compara dos conceptos clave de The Individual and Team; The Organisation, Structure and Culture y aplícalos a una organización real.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Explica una teoría relacionada con The Individual and Team; The Organisation, Structure and Culture e identifica sus limitaciones.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Diseña una intervención gerencial basada en The Individual and Team; The Organisation, Structure and Culture.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Relaciona The Individual and Team; The Organisation, Structure and Culture con sostenibilidad organizacional.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Construye un ejemplo de conflicto o problema organizacional que pueda analizarse desde The Individual and Team; The Organisation, Structure and Culture.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué evidencia o datos usarías para diagnosticar un problema de The Individual and Team; The Organisation, Structure and Culture?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U2",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué aprendizaje personal puedes extraer de The Individual and Team; The Organisation, Structure and Culture para mejorar tu desempeño profesional?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Define el tema central de Culture and Diversity; Motivation and Performance y explica su valor para la gestión.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Compara dos conceptos clave de Culture and Diversity; Motivation and Performance y aplícalos a una organización real.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Explica una teoría relacionada con Culture and Diversity; Motivation and Performance e identifica sus limitaciones.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Diseña una intervención gerencial basada en Culture and Diversity; Motivation and Performance.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Relaciona Culture and Diversity; Motivation and Performance con sostenibilidad organizacional.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Construye un ejemplo de conflicto o problema organizacional que pueda analizarse desde Culture and Diversity; Motivation and Performance.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué evidencia o datos usarías para diagnosticar un problema de Culture and Diversity; Motivation and Performance?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U3",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué aprendizaje personal puedes extraer de Culture and Diversity; Motivation and Performance para mejorar tu desempeño profesional?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Define el tema central de Perception and Decision Making; Learning and Reinforcement y explica su valor para la gestión.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Compara dos conceptos clave de Perception and Decision Making; Learning and Reinforcement y aplícalos a una organización real.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Explica una teoría relacionada con Perception and Decision Making; Learning and Reinforcement e identifica sus limitaciones.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Diseña una intervención gerencial basada en Perception and Decision Making; Learning and Reinforcement.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Relaciona Perception and Decision Making; Learning and Reinforcement con sostenibilidad organizacional.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Construye un ejemplo de conflicto o problema organizacional que pueda analizarse desde Perception and Decision Making; Learning and Reinforcement.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué evidencia o datos usarías para diagnosticar un problema de Perception and Decision Making; Learning and Reinforcement?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U4",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué aprendizaje personal puedes extraer de Perception and Decision Making; Learning and Reinforcement para mejorar tu desempeño profesional?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Define el tema central de Negotiation and Group Behaviour; Communication y explica su valor para la gestión.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Compara dos conceptos clave de Negotiation and Group Behaviour; Communication y aplícalos a una organización real.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Explica una teoría relacionada con Negotiation and Group Behaviour; Communication e identifica sus limitaciones.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Diseña una intervención gerencial basada en Negotiation and Group Behaviour; Communication.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Relaciona Negotiation and Group Behaviour; Communication con sostenibilidad organizacional.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Construye un ejemplo de conflicto o problema organizacional que pueda analizarse desde Negotiation and Group Behaviour; Communication.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué evidencia o datos usarías para diagnosticar un problema de Negotiation and Group Behaviour; Communication?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U5",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué aprendizaje personal puedes extraer de Negotiation and Group Behaviour; Communication para mejorar tu desempeño profesional?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Define el tema central de Leadership & HRM; Change & Stress y explica su valor para la gestión.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Compara dos conceptos clave de Leadership & HRM; Change & Stress y aplícalos a una organización real.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Explica una teoría relacionada con Leadership & HRM; Change & Stress e identifica sus limitaciones.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Diseña una intervención gerencial basada en Leadership & HRM; Change & Stress.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Relaciona Leadership & HRM; Change & Stress con sostenibilidad organizacional.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "Construye un ejemplo de conflicto o problema organizacional que pueda analizarse desde Leadership & HRM; Change & Stress.",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué evidencia o datos usarías para diagnosticar un problema de Leadership & HRM; Change & Stress?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    },
+    {
+      "unit": "U6",
+      "type": "essay",
+      "difficulty": "medium",
+      "question": "¿Qué aprendizaje personal puedes extraer de Leadership & HRM; Change & Stress para mejorar tu desempeño profesional?",
+      "answer_guide": "Usar estructura: concepto -> teoría -> ejemplo -> análisis -> impacto -> recomendación."
+    }
+  ],
+  "schemas": {
+    "folder_structure": [
+      "/data/module.json",
+      "/data/units.json",
+      "/data/concepts.json",
+      "/data/theories.json",
+      "/data/questions.json",
+      "/data/sources.json",
+      "/data/activities.json",
+      "/docs/module-guide.md",
+      "/docs/references.md",
+      "/app/study-mode",
+      "/app/quiz-mode",
+      "/app/portfolio-builder",
+      "/app/source-library"
+    ],
+    "tables": [
+      {
+        "table": "modules",
+        "fields": [
+          "id",
+          "code",
+          "title",
+          "description",
+          "duration_weeks",
+          "assessment_summary"
+        ]
+      },
+      {
+        "table": "units",
+        "fields": [
+          "id",
+          "module_id",
+          "title",
+          "weeks",
+          "core_question",
+          "purpose",
+          "assessment_connection",
+          "source_links"
+        ]
+      },
+      {
+        "table": "topics",
+        "fields": [
+          "id",
+          "unit_id",
+          "title",
+          "summary",
+          "sequence",
+          "tags"
+        ]
+      },
+      {
+        "table": "concepts",
+        "fields": [
+          "id",
+          "unit_id",
+          "term",
+          "definition",
+          "related_terms",
+          "source_ids"
+        ]
+      },
+      {
+        "table": "theories",
+        "fields": [
+          "id",
+          "unit_id",
+          "author",
+          "theory",
+          "summary",
+          "application",
+          "limitations"
+        ]
+      },
+      {
+        "table": "activities",
+        "fields": [
+          "id",
+          "unit_id",
+          "activity_type",
+          "prompt",
+          "expected_output",
+          "rubric"
+        ]
+      },
+      {
+        "table": "questions",
+        "fields": [
+          "id",
+          "unit_id",
+          "question_type",
+          "question",
+          "answer_key",
+          "difficulty"
+        ]
+      },
+      {
+        "table": "sources",
+        "fields": [
+          "id",
+          "title",
+          "type",
+          "url",
+          "license_note",
+          "recommended_use"
+        ]
+      },
+      {
+        "table": "portfolio_entries",
+        "fields": [
+          "id",
+          "user_id",
+          "unit_id",
+          "organization_case",
+          "analysis",
+          "reflection",
+          "evidence_links"
+        ]
+      }
+    ],
+    "ingestion_rules": [
+      "No copiar capítulos completos de libros o artículos dentro de la base si la licencia no lo permite.",
+      "Guardar resúmenes propios, metadatos, enlaces y notas de uso.",
+      "Añadir source_id a cada concepto o teoría.",
+      "Separar contenido académico, casos generados y reflexiones del usuario.",
+      "Mostrar atribución visible cuando se use contenido derivado de fuentes abiertas.",
+      "Para OpenStax: usar enlaces, citas y resúmenes propios; no ingerir el libro completo en modelos generativos sin permiso."
+    ]
+  }
+}

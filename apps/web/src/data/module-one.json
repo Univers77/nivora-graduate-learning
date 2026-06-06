@@ -1,0 +1,23 @@
+{
+  "id": "crkc-5001-module-1",
+  "title": "Fundamentos del comportamiento organizacional",
+  "subtitle": "Definitions, Orientation, Nature of Work & Management",
+  "learner": "Oscar Vargas",
+  "estimated_minutes": 110,
+  "xp_total": 720,
+  "chapters": [
+    {"id":"ob-start","number":"01","title":"¿Qué estudia el comportamiento organizacional?","description":"Aprende a observar personas, equipos y sistemas como un solo mapa.","minutes":12,"xp":80,"status":"active","color":"lime"},
+    {"id":"work-meaning","number":"02","title":"La naturaleza del trabajo","description":"Conecta diseño del trabajo, significado, bienestar y resultados.","minutes":15,"xp":90,"status":"available","color":"cyan"},
+    {"id":"manager-role","number":"03","title":"Manager, líder y arquitecto del sistema","description":"Distingue gestión, liderazgo y comportamiento observable.","minutes":18,"xp":100,"status":"locked","color":"violet"},
+    {"id":"three-levels","number":"04","title":"Tres niveles de análisis","description":"Diagnostica individuo, grupo y organización sin perder contexto.","minutes":16,"xp":110,"status":"locked","color":"orange"},
+    {"id":"climate-culture","number":"05","title":"Cultura vs. clima organizacional","description":"Diferencia identidad profunda de experiencia cotidiana.","minutes":20,"xp":140,"status":"locked","color":"rose"},
+    {"id":"climate-lab","number":"06","title":"Laboratorio: medir el clima","description":"Diseña una encuesta útil, ética y accionable.","minutes":29,"xp":200,"status":"locked","color":"gold"}
+  ],
+  "climate_dimensions": [
+    {"id":"leadership","title":"Liderazgo","description":"Confianza, claridad y apoyo del supervisor","score":82,"color":"#A78BFA"},
+    {"id":"communication","title":"Comunicación","description":"Flujo de información, voz y escucha","score":68,"color":"#FF8A70"},
+    {"id":"recognition","title":"Reconocimiento","description":"Valoración del esfuerzo y resultados","score":54,"color":"#a78bfa"},
+    {"id":"workload","title":"Carga laboral","description":"Presión, recursos y equilibrio","score":61,"color":"#fb923c"},
+    {"id":"psychological-safety","title":"Seguridad psicológica","description":"Libertad para opinar sin miedo","score":47,"color":"#fb7185"}
+  ]
+}

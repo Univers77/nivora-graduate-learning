@@ -1,0 +1,10 @@
+{
+  "name": "NIVORA Graduate Learning",
+  "short_name": "NIVORA",
+  "description": "Graduate Learning, evolved.",
+  "start_url": "./#/dashboard",
+  "display": "standalone",
+  "background_color": "#090816",
+  "theme_color": "#090816",
+  "icons": []
+}

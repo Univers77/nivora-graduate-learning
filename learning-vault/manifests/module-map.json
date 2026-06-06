@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-06-05",
+  "items": [
+    {"id":"crkc-5001","requires":[],"unlocks":["crkc-5001-u1"],"concepts":["ob-foundations","management-role","work-design","personality-values","team-dynamics","culture-climate","diversity-inclusion","motivation","performance","perception-bias","decision-making","reinforcement","group-conflict","negotiation","communication","leadership","change","stress-wellbeing"]},
+    {"id":"crkc-5001-u1","requires":[],"unlocks":["crkc-5001-u2"],"concepts":["ob-foundations","work-design","management-role","three-levels"]},
+    {"id":"crkc-5001-u2","requires":["crkc-5001-u1"],"unlocks":["crkc-5001-u3"],"concepts":["personality-values","team-dynamics","culture-climate","climate-measurement"]},
+    {"id":"crkc-5001-u3","requires":["crkc-5001-u2"],"unlocks":["crkc-5001-u4"],"concepts":["diversity-inclusion","motivation","performance"]},
+    {"id":"crkc-5001-u4","requires":["crkc-5001-u3"],"unlocks":["crkc-5001-u5"],"concepts":["perception-bias","decision-making","reinforcement"]},
+    {"id":"crkc-5001-u5","requires":["crkc-5001-u4"],"unlocks":["crkc-5001-u6"],"concepts":["group-conflict","negotiation","communication"]},
+    {"id":"crkc-5001-u6","requires":["crkc-5001-u5"],"unlocks":[],"concepts":["leadership","change","stress-wellbeing"]}
+  ]
+}

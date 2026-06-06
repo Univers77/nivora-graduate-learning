@@ -1,0 +1,10 @@
+[
+  {"id":"src-crkc5001-complete","title":"Módulo completo · Organisational Behaviour CRKC 5001","type":"PDF + Word + MD","status":"Disponible","updated":"Fuente canónica","module":"Curso completo"},
+  {"id":"src-crkc5001-glossary","title":"Glosario curricular · 70 conceptos","type":"CSV + interactivo","status":"Disponible","updated":"6 unidades","module":"Curso completo"},
+  {"id":"src-crkc5001-question-bank","title":"Banco de práctica · 48 preguntas","type":"Práctica activa","status":"Disponible","updated":"6 unidades","module":"Curso completo"},
+  {"id":"src-crkc5001-overview","title":"Overview · Organisational Behaviour CRKC 5001","type":"Presentación","status":"Disponible","updated":"Programa base","module":"Curso completo"},
+  {"id":"src-crkc5001-module-one","title":"Fundamentos del comportamiento organizacional","type":"PDF + Word","status":"Disponible","updated":"Módulo 1","module":"Unidad 1"},
+  {"id":"src-climate-questionnaire","title":"Organizational Climate Questionnaire","type":"Instrumento","status":"Referencia","updated":"Fuente académica","module":"Unidad 2"},
+  {"id":"src-climate-research","title":"Investigación sobre clima organizacional","type":"Investigación","status":"Referencia","updated":"Síntesis curada","module":"Unidad 2"},
+  {"id":"src-climate-survey-guide","title":"Guía para diseñar una encuesta de clima","type":"Guía aplicada","status":"Referencia","updated":"Aplicación práctica","module":"Unidad 2"}
+]

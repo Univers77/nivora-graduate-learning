@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Asset","type":"object","required":["id","type","license","alt"],"properties":{"id":{"type":"string"},"type":{"type":"string"},"license":{"type":"string"},"alt":{"type":"string"}}}
