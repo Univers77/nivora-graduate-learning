@@ -3,12 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; font-family: "Space Grotesk", sans-serif; background: #090816; color: #f7f3ff; }
+:root { color-scheme: dark; font-family: "Space Grotesk", sans-serif; background: #07090f; color: #fff8eb; }
 * { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; min-height: 100vh; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); background: radial-gradient(circle at 82% -8%, #33265d 0, #151329 22%, #090816 48%); }
+body { margin: 0; min-width: 320px; min-height: 100vh; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); background: radial-gradient(circle at 82% -8%, #3a1420 0, #15121a 25%, #07090f 54%); }
 button, a { -webkit-tap-highlight-color: transparent; }
-:focus-visible { outline: 2px solid #A78BFA; outline-offset: 3px; }
-.grid-noise { background-image: linear-gradient(rgba(167,139,250,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(167,139,250,.035) 1px, transparent 1px); background-size: 38px 38px; }
+:focus-visible { outline: 2px solid #D8B45B; outline-offset: 3px; }
+.grid-noise { background-image: linear-gradient(rgba(216,180,91,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(216,180,91,.035) 1px, transparent 1px); background-size: 38px 38px; }
 .panel { @apply rounded-3xl border border-white/10 bg-panel/80 shadow-2xl shadow-black/30 backdrop-blur; }
 .eyebrow { @apply font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-lime; }
 .pill { @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70; }
@@ -16,5 +16,5 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .progress-fill { @apply h-full rounded-full bg-lime; }
 @media (prefers-reduced-motion: no-preference) {
   .pulse-soft { animation: pulse-soft 2.4s ease-in-out infinite; }
-  @keyframes pulse-soft { 50% { transform: scale(1.025); box-shadow: 0 0 46px rgba(167,139,250,.18); } }
+  @keyframes pulse-soft { 50% { transform: scale(1.025); box-shadow: 0 0 46px rgba(216,180,91,.18); } }
 }

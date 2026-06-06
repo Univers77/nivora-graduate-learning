@@ -2,7 +2,7 @@
 
 ## Dirección
 
-Graduate Momentum: rigor editorial de posgrado con la claridad, progreso visible y recompensa inmediata de una experiencia de aprendizaje diaria.
+First Class Academy: rigor editorial de posgrado con el lujo sereno de una aerolínea premium internacional.
 
 ## Marca
 
@@ -12,17 +12,17 @@ Graduate Momentum: rigor editorial de posgrado con la claridad, progreso visible
 
 ## Paleta
 
-- Night Ink: `#090816`
-- Academy Panel: `#151329`
-- Aurora Violet: `#A78BFA`
-- Insight Coral: `#FF8A70`
-- Reading White: `#F7F3FF`
-- Muted Lavender: `#A7A0B8`
+- First Class Ink: `#07090F`
+- Cabin Panel: `#16131A`
+- Heritage Gold: `#D8B45B`
+- Emirates Ruby: `#8E1B2E`
+- Signal Coral: `#E05A47`
+- Ivory Reading: `#FFF8EB`
 
 ## Uso
 
-- Aurora Violet indica progreso, foco y acciones principales.
-- Insight Coral destaca exploración, casos y señales secundarias.
+- Heritage Gold indica progreso, foco y acciones principales.
+- Ruby/Coral destaca exploración, casos y señales secundarias.
 - Los fondos oscuros reducen ruido; las superficies elevadas conservan jerarquía.
 - Nunca depender solo del color para comunicar estado.
 

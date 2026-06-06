@@ -14,9 +14,9 @@
     {"id":"climate-lab","number":"06","title":"Laboratorio: medir el clima","description":"Diseña una encuesta útil, ética y accionable.","minutes":29,"xp":200,"status":"locked","color":"gold"}
   ],
   "climate_dimensions": [
-    {"id":"leadership","title":"Liderazgo","description":"Confianza, claridad y apoyo del supervisor","score":82,"color":"#A78BFA"},
-    {"id":"communication","title":"Comunicación","description":"Flujo de información, voz y escucha","score":68,"color":"#FF8A70"},
-    {"id":"recognition","title":"Reconocimiento","description":"Valoración del esfuerzo y resultados","score":54,"color":"#a78bfa"},
+    {"id":"leadership","title":"Liderazgo","description":"Confianza, claridad y apoyo del supervisor","score":82,"color":"#D8B45B"},
+    {"id":"communication","title":"Comunicación","description":"Flujo de información, voz y escucha","score":68,"color":"#E05A47"},
+    {"id":"recognition","title":"Reconocimiento","description":"Valoración del esfuerzo y resultados","score":54,"color":"#8E1B2E"},
     {"id":"workload","title":"Carga laboral","description":"Presión, recursos y equilibrio","score":61,"color":"#fb923c"},
     {"id":"psychological-safety","title":"Seguridad psicológica","description":"Libertad para opinar sin miedo","score":47,"color":"#fb7185"}
   ]

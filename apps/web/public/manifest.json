@@ -4,7 +4,7 @@
   "description": "Graduate Learning, evolved.",
   "start_url": "./#/dashboard",
   "display": "standalone",
-  "background_color": "#090816",
-  "theme_color": "#090816",
+  "background_color": "#07090f",
+  "theme_color": "#07090f",
   "icons": []
 }

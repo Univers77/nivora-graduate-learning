@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#090816",
-        panel: "#151329",
-        lime: "#A78BFA",
-        cyan: "#FF8A70",
+        ink: "#07090f",
+        panel: "#16131a",
+        lime: "#D8B45B",
+        cyan: "#E05A47",
       },
       fontFamily: {
         sans: ["Space Grotesk", "Inter", "sans-serif"],

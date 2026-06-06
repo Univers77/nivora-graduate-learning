@@ -2,7 +2,14 @@
 
 **Graduate Learning, evolved.**
 
-Plataforma de posgrado interactivo que convierte materiales académicos en rutas de dominio, práctica activa, evaluaciones y documentos de estudio.
+Plataforma premium de posgrado interactivo para Oscar Vargas. Convierte materiales académicos en rutas de dominio, práctica activa, evaluaciones, documentos de estudio y memoria local exportable a Obsidian.
+
+## Acceso demo
+
+- Usuario: `oscar.vargas`
+- Contraseña: `Nivora@CRKC5001`
+
+El progreso arranca en cero y se guarda en `localStorage`. La guía flotante permite conectar una carpeta de Obsidian desde el navegador para escribir `Oscar Vargas/NIVORA/learning-memory.md`; si el navegador no lo permite, descarga una nota Markdown.
 
 ## Inicio rapido
 

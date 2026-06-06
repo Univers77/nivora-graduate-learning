@@ -1,6 +1,8 @@
 import { BookOpen, BrainCircuit, FileQuestion, FileText, GraduationCap, LayoutDashboard, Menu, Network, Orbit, X } from "lucide-react";
-import { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { useOscarSession } from "../../stores/useOscarSession";
+import { FloatingGuide } from "../guide/FloatingGuide";
 
 const links = [
   ["/dashboard", "Inicio", LayoutDashboard],
@@ -16,6 +18,9 @@ const links = [
 
 export function AppShell() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const { session, updateLastRoute } = useOscarSession();
+  useEffect(() => updateLastRoute(`${location.pathname}${location.search}${location.hash}`), [location, updateLastRoute]);
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-[250px_1fr]">
       <button aria-label="Abrir navegacion" className="fixed right-4 top-4 z-50 rounded-full border border-white/10 bg-panel p-3 lg:hidden" onClick={() => setOpen(!open)}>
@@ -31,10 +36,11 @@ export function AppShell() {
           ))}
         </nav>
         <div className="rounded-2xl border border-lime/20 bg-lime/5 p-4">
-          <p className="eyebrow">Momentum activo</p><p className="mt-2 text-2xl font-bold">12 días</p><p className="text-xs text-white/50">+240 puntos de dominio</p>
+          <p className="eyebrow">Momentum activo</p><p className="mt-2 text-2xl font-bold">{session.streakDays} días</p><p className="text-xs text-white/50">+{session.points} puntos de dominio</p>
         </div>
       </aside>
       <main className="grid-noise min-w-0 p-4 pt-20 sm:p-8 lg:p-10"><Outlet /></main>
+      <FloatingGuide />
     </div>
   );
 }
