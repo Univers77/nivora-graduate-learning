@@ -2,7 +2,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 export const OSCAR_CREDENTIALS = {
-  username: "oscar.vargas",
+  username: "learner.demo",
   password: "Nivora@CRKC5001",
 };
 
@@ -23,7 +23,7 @@ const STORAGE_KEY = "nivora:oscar-session:v1";
 
 const initialSession: OscarSession = {
   authenticated: false,
-  learnerName: "Oscar Vargas",
+  learnerName: "Demo Learner",
   lastRoute: "/dashboard",
   currentUnit: "U1",
   currentLesson: "/module-1/lesson",
@@ -36,7 +36,9 @@ const initialSession: OscarSession = {
 
 function readSession(): OscarSession {
   try {
-    return { ...initialSession, ...JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}") };
+    const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}");
+    const mobileViewport = window.matchMedia("(max-width: 640px)").matches;
+    return { ...initialSession, ...stored, guideOpen: mobileViewport ? false : (stored.guideOpen ?? initialSession.guideOpen) };
   } catch {
     return initialSession;
   }
