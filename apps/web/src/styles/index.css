@@ -26,10 +26,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .motion-card { transition: transform 220ms cubic-bezier(.22,1,.36,1), border-color 180ms ease, background-color 180ms ease; }
   .motion-card:hover { transform: translateY(-3px); border-color: rgba(216,180,91,.35); }
   .guide-sheet { animation: guide-enter 260ms cubic-bezier(.32,.72,0,1) both; transform-origin: bottom right; }
+  .mascot-bubble { animation: mascot-idle 3.2s cubic-bezier(.25,1,.5,1) infinite; }
   @keyframes float-orb { 0%,100% { transform: translate3d(0,0,0) scale(1); opacity: .35; } 50% { transform: translate3d(12px,-18px,0) scale(1.08); opacity: .7; } }
   @keyframes device-rise { from { opacity: 0; transform: translate3d(0,18px,0) scale(.96); } to { opacity: 1; transform: translate3d(0,0,0) scale(1); } }
   @keyframes surface-sheen { 0%, 45% { transform: translateX(-65%) rotate(12deg); } 100% { transform: translateX(80%) rotate(12deg); } }
   @keyframes guide-enter { from { opacity: 0; transform: translate3d(0,16px,0) scale(.96); } to { opacity: 1; transform: translate3d(0,0,0) scale(1); } }
+  @keyframes mascot-idle { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(0,-5px,0); } }
 }
 .intro-orb { position: absolute; width: 180px; height: 180px; border-radius: 999px; pointer-events: none; background: radial-gradient(circle, rgba(216,180,91,.28), rgba(224,90,71,.08) 48%, transparent 70%); filter: blur(4px); }
 @media (max-width: 640px) {

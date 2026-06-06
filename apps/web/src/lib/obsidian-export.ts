@@ -14,13 +14,13 @@ export function buildOscarObsidianNote(events: LearningInteraction[], session: O
   });
 
   return `---
-learner: Demo Learner
+learner: Oscar Vargas
 platform: NIVORA
 course: CRKC 5001 Organisational Behaviour
 updated: ${new Date().toISOString()}
 ---
 
-# Memoria de aprendizaje
+# Memoria de aprendizaje - Oscar Vargas
 
 ## Estado inicial
 
@@ -53,7 +53,7 @@ export function downloadOscarObsidianNote(markdown: string) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "NIVORA_memoria_aprendizaje.md";
+  link.download = "Oscar_Vargas_NIVORA_memoria.md";
   link.click();
   URL.revokeObjectURL(url);
 }

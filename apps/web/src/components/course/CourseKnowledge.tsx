@@ -1,13 +1,14 @@
-import { ArrowRight, BookOpen, BrainCircuit, CheckCircle2, ChevronRight, FileQuestion, GraduationCap, Lightbulb, Network, Search, Target, Trophy } from "lucide-react";
+import { ArrowRight, BookOpen, BrainCircuit, CheckCircle2, ChevronRight, FileQuestion, GraduationCap, Lightbulb, LockKeyhole, Network, Search, Target, Trophy } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import course from "../../data/course-complete.json";
 import { PageHeader, Progress } from "../shared/UI";
+import { useOscarSession } from "../../stores/useOscarSession";
 
 type Unit = (typeof course.units)[number];
 type Question = (typeof course.questions)[number];
 
-const unitProgress: Record<string, number> = { U1: 34, U2: 0, U3: 0, U4: 0, U5: 0, U6: 0 };
+const requiredUnitOneCheckpoints = 6;
 const unitSpanish: Record<string, string> = {
   U1: "Fundamentos y naturaleza del trabajo",
   U2: "Individuo, equipo, estructura y cultura",
@@ -41,16 +42,22 @@ export function CourseOverviewPage() {
 }
 
 function UnitCard({ unit, index }: { unit: Unit; index: number }) {
-  const progress = unitProgress[unit.id] ?? 0;
-  return <Link to={`/course/${unit.id.toLowerCase()}`} className={`group block rounded-3xl border p-6 transition-colors ${progress ? "border-lime/30 bg-lime/[.055]" : "border-white/10 bg-panel/70 hover:border-white/20"}`}>
+  const { session } = useOscarSession();
+  const progress = unit.id === "U1" ? Math.round((session.passedCheckpoints.length / requiredUnitOneCheckpoints) * 100) : 0;
+  const unlocked = session.unlockedUnits.includes(unit.id);
+  const content = <article className={`group block rounded-3xl border p-6 transition-colors ${progress ? "border-lime/30 bg-lime/[.055]" : unlocked ? "border-white/10 bg-panel/70 hover:border-white/20" : "border-white/[.06] bg-white/[.015] opacity-60"}`}>
     <div className="flex items-start gap-4"><div className={`grid h-14 w-14 shrink-0 place-items-center rounded-2xl font-mono text-sm font-bold ${progress ? "bg-lime text-ink" : "bg-white/5 text-white/40"}`}>{String(index+1).padStart(2,"0")}</div><div className="min-w-0 flex-1"><div className="flex flex-wrap items-center justify-between gap-3"><div><p className="eyebrow">{unit.id} · Semanas {unit.weeks}</p><h2 className="mt-2 text-xl font-bold">{unitSpanish[unit.id]}</h2></div><ChevronRight className="text-white/25 transition-transform group-hover:translate-x-1"/></div><p className="mt-3 text-sm text-white/45">{unit.question}</p><div className="mt-5 flex flex-wrap gap-2"><span className="pill">{unit.concepts.length} conceptos</span><span className="pill">{unit.theories.length} teorías</span><span className="pill">{unit.activities.length} actividades</span></div>{progress > 0 && <div className="mt-5"><Progress value={progress}/></div>}</div></div>
-  </Link>;
+    {!unlocked && <div className="mt-4 flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[.03] p-3 text-sm text-white/45"><LockKeyhole size={16}/>Aprueba la unidad anterior para desbloquear.</div>}
+  </article>;
+  return unlocked ? <Link to={`/course/${unit.id.toLowerCase()}`}>{content}</Link> : content;
 }
 
 export function UnitDetailPage() {
   const { unitId } = useParams();
+  const { session } = useOscarSession();
   const unit = course.units.find(item => item.id.toLowerCase() === unitId);
   if (!unit) return <Navigate to="/course" replace />;
+  if (!session.unlockedUnits.includes(unit.id)) return <Navigate to="/course" replace />;
   const questions = course.questions.filter(question => question.unit === unit.id);
 
   return <div className="mx-auto max-w-7xl">
@@ -69,12 +76,13 @@ export function GlossaryPage() {
 }
 
 export function PracticeBankPage() {
+  const { session } = useOscarSession();
   const [unit, setUnit] = useState("U1");
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const questions = course.questions.filter(item => item.unit === unit);
   const current = questions[index % questions.length] as Question;
-  const changeUnit = (value: string) => { setUnit(value); setIndex(0); setRevealed(false); };
+  const changeUnit = (value: string) => { if (!session.unlockedUnits.includes(value)) return; setUnit(value); setIndex(0); setRevealed(false); };
   const next = () => { setIndex(value => (value + 1) % questions.length); setRevealed(false); };
-  return <div className="mx-auto max-w-5xl"><PageHeader eyebrow="Recuperación activa" title="Banco de práctica" description="Responde sin consultar apuntes. Después compara tu estructura con la guía y registra qué debes reforzar."/><div className="mb-5 flex flex-wrap gap-2">{course.units.map(item=><button onClick={()=>changeUnit(item.id)} className={`rounded-full px-4 py-2 text-xs font-bold ${unit===item.id?"bg-lime text-ink":"border border-white/10 text-white/55"}`} key={item.id}>{item.id}</button>)}</div><article className="panel overflow-hidden"><div className="border-b border-white/10 bg-gradient-to-br from-lime/10 to-transparent p-7 sm:p-10"><div className="flex flex-wrap justify-between gap-3"><span className="eyebrow">{unit} · Pregunta {index+1} de {questions.length}</span><span className="pill">{current.difficulty}</span></div><h2 className="mt-7 text-3xl font-bold leading-tight sm:text-5xl">{current.question}</h2></div><div className="p-7 sm:p-10"><p className="text-sm text-white/40">Estructura sugerida para tu respuesta</p><div className="mt-4 flex flex-wrap gap-2">{["Concepto","Teoría","Ejemplo","Análisis","Impacto","Recomendación"].map((step,i)=><span className="pill" key={step}><span className="font-mono text-lime">0{i+1}</span>{step}</span>)}</div>{revealed&&<div className="mt-7 rounded-2xl border border-cyan/20 bg-cyan/5 p-5"><p className="text-sm font-bold text-cyan">Guía de respuesta</p><p className="mt-2 text-white/55">{current.answer_guide}</p></div>}<div className="mt-8 flex flex-wrap justify-between gap-3"><button onClick={()=>setRevealed(true)} className="rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/70">Mostrar guía</button><button onClick={next} className="inline-flex items-center gap-2 rounded-full bg-lime px-5 py-3 text-sm font-bold text-ink">Siguiente pregunta <ArrowRight size={16}/></button></div></div></article></div>;
+  return <div className="mx-auto max-w-5xl"><PageHeader eyebrow="Recuperación activa" title="Banco de práctica" description="Responde sin consultar apuntes. Después compara tu estructura con la guía y registra qué debes reforzar."/><div className="mb-5 flex flex-wrap gap-2">{course.units.map(item=>{const unlocked=session.unlockedUnits.includes(item.id); return <button disabled={!unlocked} onClick={()=>changeUnit(item.id)} className={`rounded-full px-4 py-2 text-xs font-bold disabled:cursor-not-allowed disabled:opacity-35 ${unit===item.id?"bg-lime text-ink":"border border-white/10 text-white/55"}`} key={item.id}>{unlocked ? item.id : `${item.id} bloqueado`}</button>})}</div><article className="panel overflow-hidden"><div className="border-b border-white/10 bg-gradient-to-br from-lime/10 to-transparent p-7 sm:p-10"><div className="flex flex-wrap justify-between gap-3"><span className="eyebrow">{unit} · Pregunta {index+1} de {questions.length}</span><span className="pill">{current.difficulty}</span></div><h2 className="mt-7 text-3xl font-bold leading-tight sm:text-5xl">{current.question}</h2></div><div className="p-7 sm:p-10"><p className="text-sm text-white/40">Estructura sugerida para tu respuesta</p><div className="mt-4 flex flex-wrap gap-2">{["Concepto","Teoría","Ejemplo","Análisis","Impacto","Recomendación"].map((step,i)=><span className="pill" key={step}><span className="font-mono text-lime">0{i+1}</span>{step}</span>)}</div>{revealed&&<div className="mt-7 rounded-2xl border border-cyan/20 bg-cyan/5 p-5"><p className="text-sm font-bold text-cyan">Guía de respuesta</p><p className="mt-2 text-white/55">{current.answer_guide}</p></div>}<div className="mt-8 flex flex-wrap justify-between gap-3"><button onClick={()=>setRevealed(true)} className="rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/70">Mostrar guía</button><button onClick={next} className="inline-flex items-center gap-2 rounded-full bg-lime px-5 py-3 text-sm font-bold text-ink">Siguiente pregunta <ArrowRight size={16}/></button></div></div></article></div>;
 }

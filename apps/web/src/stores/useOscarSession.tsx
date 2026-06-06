@@ -2,7 +2,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 export const OSCAR_CREDENTIALS = {
-  username: "learner.demo",
+  username: "oscar.vargas",
   password: "Nivora@CRKC5001",
 };
 
@@ -16,6 +16,9 @@ export type OscarSession = {
   streakDays: number;
   overallMastery: number;
   completedSteps: string[];
+  passedCheckpoints: string[];
+  quizScores: Record<string, number>;
+  unlockedUnits: string[];
   guideOpen: boolean;
 };
 
@@ -23,7 +26,7 @@ const STORAGE_KEY = "nivora:oscar-session:v1";
 
 const initialSession: OscarSession = {
   authenticated: false,
-  learnerName: "Demo Learner",
+  learnerName: "Oscar Vargas",
   lastRoute: "/dashboard",
   currentUnit: "U1",
   currentLesson: "/module-1/lesson",
@@ -31,7 +34,10 @@ const initialSession: OscarSession = {
   streakDays: 0,
   overallMastery: 0,
   completedSteps: [],
-  guideOpen: true,
+  passedCheckpoints: [],
+  quizScores: {},
+  unlockedUnits: ["U1"],
+  guideOpen: false,
 };
 
 function readSession(): OscarSession {
@@ -63,7 +69,7 @@ function useOscarSessionState() {
   const login = useCallback((username: string, password: string) => {
     const valid = username.trim().toLowerCase() === OSCAR_CREDENTIALS.username && password === OSCAR_CREDENTIALS.password;
     if (!valid) return false;
-    setSession((current) => ({ ...current, authenticated: true, guideOpen: true }));
+    setSession((current) => ({ ...current, authenticated: true, guideOpen: false }));
     return true;
   }, []);
 
@@ -80,6 +86,23 @@ function useOscarSessionState() {
     setSession((current) => current.completedSteps.includes(stepId) ? current : { ...current, completedSteps: [...current.completedSteps, stepId] });
   }, []);
 
+  const passCheckpoint = useCallback((checkpointId: string, score: number) => {
+    setSession((current) => {
+      const passedCheckpoints = current.passedCheckpoints.includes(checkpointId) ? current.passedCheckpoints : [...current.passedCheckpoints, checkpointId];
+      const completed = passedCheckpoints.length;
+      const points = Math.max(current.points, completed * 80);
+      const overallMastery = Math.min(100, Math.round((completed / 6) * 100));
+      return {
+        ...current,
+        points,
+        overallMastery,
+        passedCheckpoints,
+        quizScores: { ...current.quizScores, [checkpointId]: score },
+        unlockedUnits: completed >= 6 && !current.unlockedUnits.includes("U2") ? [...current.unlockedUnits, "U2"] : current.unlockedUnits,
+      };
+    });
+  }, []);
+
   const setGuideOpen = useCallback((guideOpen: boolean) => {
     setSession((current) => ({ ...current, guideOpen }));
   }, []);
@@ -89,7 +112,7 @@ function useOscarSessionState() {
     setSession(initialSession);
   }, []);
 
-  return { session, login, logout, updateLastRoute, completeStep, setGuideOpen, reset };
+  return { session, login, logout, updateLastRoute, completeStep, passCheckpoint, setGuideOpen, reset };
 }
 
 export function OscarSessionProvider({ children }: { children: ReactNode }) {
