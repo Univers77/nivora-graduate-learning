@@ -53,6 +53,8 @@ function readSession(): OscarSession {
 export function resetOscarLearningState() {
   localStorage.removeItem(STORAGE_KEY);
   localStorage.removeItem("nivora:learning-memory:v1");
+  localStorage.removeItem("nivora:obsidian-note:v1");
+  localStorage.removeItem("nivora:github-progress-ledger:v1");
 }
 
 type OscarSessionStore = ReturnType<typeof useOscarSessionState>;

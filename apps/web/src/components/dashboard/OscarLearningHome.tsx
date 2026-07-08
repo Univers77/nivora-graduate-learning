@@ -1,9 +1,10 @@
 import { ArrowRight, Award, BarChart3, BookOpen, BrainCircuit, CalendarDays, CheckCircle2, ChevronRight, Flame, LockKeyhole, Play, Sparkles, Star, Target, Trophy, Zap } from "lucide-react";
 import { Link, useSearchParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import moduleOne from "../../data/module-one.json";
 import { useLanguage, type Language } from "../../i18n/LanguageProvider";
 import { Progress } from "../shared/UI";
+import { useLearningMemory } from "../../stores/useLearningMemory";
 import { useOscarSession } from "../../stores/useOscarSession";
 
 const colorStyles: Record<string, string> = {
@@ -223,6 +224,8 @@ export function ModuleOneOverview() {
 export function ModuleOneLesson() {
   const [params] = useSearchParams();
   const { session, passCheckpoint } = useOscarSession();
+  const { record } = useLearningMemory();
+  const startedLessons = useRef(new Set<string>());
   const { language, t } = useLanguage();
   const lessons = chapterLessons[language];
   const requested = params.get("chapter") ?? "ob-start";
@@ -238,10 +241,19 @@ export function ModuleOneLesson() {
   const correct = selected === lesson.correct;
   const score = correct ? 100 : 0;
   const canContinue = passed || (submitted && score >= passScore);
+  useEffect(() => {
+    if (startedLessons.current.has(lesson.id)) return;
+    startedLessons.current.add(lesson.id);
+    record({ type: "lesson_started", unitId: "U1", conceptId: lesson.id, note: `Opened ${lesson.title}` }, session);
+  }, [lesson.id, lesson.title, record, session]);
   const submit = () => {
     if (selected === null) return;
     setSubmitted(true);
-    if (selected === lesson.correct) passCheckpoint(lesson.id, 100);
+    record({ type: "quiz_answered", unitId: "U1", conceptId: lesson.id, correct, confidence: correct ? 1 : 0.35, difficulty: 2, note: `Quick check: ${lesson.question}` }, session);
+    if (selected === lesson.correct) {
+      passCheckpoint(lesson.id, 100);
+      record({ type: "lesson_completed", unitId: "U1", conceptId: lesson.id, correct: true, confidence: 1, difficulty: 2, note: `Passed checkpoint ${lesson.id} with 100%` }, { ...session, passedCheckpoints: session.passedCheckpoints.includes(lesson.id) ? session.passedCheckpoints : [...session.passedCheckpoints, lesson.id] });
+    }
   };
   const next = lessons[currentIndex + 1];
 
