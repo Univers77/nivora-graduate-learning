@@ -4,6 +4,7 @@ import { AppShell } from "./components/shared/AppShell";
 import { LoginPage } from "./components/auth/LoginPage";
 import { ClimateLab, ModuleOneLesson, ModuleOneOverview, OscarLearningHome } from "./components/dashboard/OscarLearningHome";
 import { LandingPage, LearningMemoryPage, LearningVaultPage, SkillTreePage, StudyDocsPage } from "./pages";
+import { useLanguage } from "./i18n/LanguageProvider";
 import { useOscarSession } from "./stores/useOscarSession";
 
 const CourseOverviewPage = lazy(() => import("./components/course/CourseKnowledge").then(module => ({ default: module.CourseOverviewPage })));
@@ -11,10 +12,10 @@ const UnitDetailPage = lazy(() => import("./components/course/CourseKnowledge").
 const GlossaryPage = lazy(() => import("./components/course/CourseKnowledge").then(module => ({ default: module.GlossaryPage })));
 const PracticeBankPage = lazy(() => import("./components/course/CourseKnowledge").then(module => ({ default: module.PracticeBankPage })));
 
-const loading = <div className="panel mx-auto max-w-3xl p-8 text-center"><p className="eyebrow">Preparando contenido</p><p className="mt-3 text-white/50">Organizando tu siguiente experiencia de aprendizaje...</p></div>;
-
 export default function App() {
   const { session } = useOscarSession();
+  const { t } = useLanguage();
+  const loading = <div className="panel mx-auto max-w-3xl p-8 text-center"><p className="eyebrow">{t.loading.eyebrow}</p><p className="mt-3 text-white/50">{t.loading.text}</p></div>;
   if (!session.authenticated) {
     return <Suspense fallback={loading}><Routes><Route path="/login" element={<LoginPage />} /><Route path="*" element={<Navigate to="/login" replace />} /></Routes></Suspense>;
   }
